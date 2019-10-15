@@ -2,45 +2,47 @@
 
 namespace Hcode;
 
-class Model {
+	class Model{
 
-    private $values = [];
+		private $values = [];
 
-    public function __call($name, $args)
-    {
-        
-        $method = substr($name, 0, 3);
-        $fieldName = substr($name, 3, strlen($name));
+		public function __call($name, $args)
 
-        switch($method)
-        {
-            case "get":
-                return $this->values[$fieldName];
-            break;
-            case "set":
-                $this->values[$fieldName] = $args[0];
-            break;
-        }
-    }
+		{
+// aqui criamos a estancia que nos fornece o retorno dentro dos array e daquilo que está no banco
+			$method    = substr($name, 0, 3);
+			$fieldName = substr($name, 3, strlen($name));
 
-    public function setData($data = array())
-    {
+			switch ($method) {
+				case "get":
+				return $this->values[$fieldName];
+				break;
 
-        foreach($data as $key => $value){
+				case "set":
+					$this->values[$fieldName] = $args[0];
+				break;
+				
+			}
 
-            $this->{"set".$key}($value);
+		}
 
-        }
-    }
+		public function setData($data = array())
+		{
 
-    public function getValues()
-    {
+			foreach ($data as $key => $value) {
 
-        return $this->values;
+				$this->{"set".$key}($value);
+				
+			}
 
-    }
+		}
 
+		public function getValues()
+		{
+
+			return $this->values;
+
+		}
 }
-
 
 ?>

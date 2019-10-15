@@ -2,7 +2,8 @@
 
 namespace Hcode\DB;
 
-class Sql {
+class Sql
+{
 
 	const HOSTNAME = "127.0.0.1";
 	const USERNAME = "root";
@@ -50,7 +51,6 @@ class Sql {
 		$stmt->execute();
 
 	}
-
 	public function select($rawQuery, $params = array()):array
 	{
 
@@ -65,5 +65,4 @@ class Sql {
 	}
 
 }
-
  ?>
