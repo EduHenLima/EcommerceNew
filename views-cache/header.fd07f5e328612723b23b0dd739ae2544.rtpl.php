@@ -68,7 +68,7 @@ desired effect
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
-      <a href="/res/admin/#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
       <!-- Navbar Right Menu -->
@@ -77,7 +77,7 @@ desired effect
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
-            <a href="/res/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
             </a>
@@ -87,7 +87,7 @@ desired effect
                 <!-- inner menu: contains the messages -->
                 <ul class="menu">
                   <li><!-- start message -->
-                    <a href="/res/admin/#">
+                    <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
                         <img src="/res/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
@@ -105,7 +105,7 @@ desired effect
                 </ul>
                 <!-- /.menu -->
               </li>
-              <li class="footer"><a href="/res/admin/#">See All Messages</a></li>
+              <li class="footer"><a href="#">See All Messages</a></li>
             </ul>
           </li>
           <!-- /.messages-menu -->
@@ -113,7 +113,7 @@ desired effect
           <!-- Notifications Menu -->
           <li class="dropdown notifications-menu">
             <!-- Menu toggle button -->
-            <a href="/res/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
             </a>
@@ -123,20 +123,20 @@ desired effect
                 <!-- Inner Menu: contains the notifications -->
                 <ul class="menu">
                   <li><!-- start notification -->
-                    <a href="/res/admin/#">
+                    <a href="#">
                       <i class="fa fa-users text-aqua"></i> 5 new members joined today
                     </a>
                   </li>
                   <!-- end notification -->
                 </ul>
               </li>
-              <li class="footer"><a href="/res/admin/#">View all</a></li>
+              <li class="footer"><a href="#">View all</a></li>
             </ul>
           </li>
           <!-- Tasks Menu -->
           <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
-            <a href="/res/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
               <span class="label label-danger">9</span>
             </a>
@@ -146,7 +146,7 @@ desired effect
                 <!-- Inner menu: contains the tasks -->
                 <ul class="menu">
                   <li><!-- Task item -->
-                    <a href="/res/admin/#">
+                    <a href="#">
                       <!-- Task title and progress text -->
                       <h3>
                         Design some buttons
@@ -165,7 +165,7 @@ desired effect
                 </ul>
               </li>
               <li class="footer">
-                <a href="/res/admin/#">View all tasks</a>
+                <a href="#">View all tasks</a>
               </li>
             </ul>
           </li>
@@ -192,7 +192,7 @@ desired effect
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="www.google.com.br">Followers</a>
+                    <a href="#">Followers</a>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="#">Sales</a>
@@ -236,7 +236,7 @@ desired effect
         <div class="pull-left info">
           <p>Alexander Pierce</p>
           <!-- Status -->
-          <a href="/#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
 
@@ -256,8 +256,8 @@ desired effect
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="/admin/users"><i class="fa fa-user"></i> <span>Usuarios</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        <li class="active"><a href="/admin/users"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
+        <li><a href="/admin/categories"><i class="fa fa-link"></i> <span>Categorias</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">
@@ -274,4 +274,3 @@ desired effect
     </section>
     <!-- /.sidebar -->
   </aside>
-
