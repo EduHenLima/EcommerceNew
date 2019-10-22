@@ -15,6 +15,7 @@ $app = new Slim();
 // com esse comando debug veremos o framwork do slim aparecendo na tela com isso ficara mais facil de solucionar o erro.
 $app->config('debug', true);
 
+require_once('functions.php');
 require_once('site.php');
 require_once('admin.php');
 require_once('admin-users.php');
