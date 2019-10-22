@@ -74,9 +74,9 @@ class Product extends Model{
 
 	public function checkPhoto()
 	{
-		if (file_exists($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "res" . DIRECTORY_SEPARATOR . "site" . DIRECTORY_SEPARATOR . "img" . 
-		$this->getidproduct() . "jpg")){
-			$url =  "/res/site/" . "img" . $this->getidproduct() . ".jpg";
+		if (file_exists($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "res" . DIRECTORY_SEPARATOR . "site" . DIRECTORY_SEPARATOR . "products_img" . DIRECTORY_SEPARATOR . "img" .
+		$this->getidproduct() . ".jpg")){
+			$url =  "/res/site/products_img/" . "img" . $this->getidproduct() . ".jpg";
 		}
 		else{
 			$url = "/res/site/img/crossword.png";
@@ -123,6 +123,7 @@ class Product extends Model{
 		$dist = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 
 		"res" . DIRECTORY_SEPARATOR .
 		"site" . DIRECTORY_SEPARATOR . 
+		"products_img" . DIRECTORY_SEPARATOR .
 		"img" . $this->getidproduct() . ".jpg";
 
 	imagejpeg($image, $dist);
