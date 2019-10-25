@@ -1,7 +1,7 @@
 <?php
 use Hcode\PageAdmin;
 use Hcode\Model\User;
-
+//new verify admin
 $app->get('/admin', function() {
     
 	User::verifyLogin();
